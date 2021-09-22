@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        *{
+
+            padding: 0px;
+            margin: 0px;
+          
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .secim {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .secim.over {
+            background-color: rgb(159, 204, 76);
+        }
+
+        .secim.hey {
+
+            background-color: rgb(0, 255, 64);
+
+        }
+        .secim.false{
+            background-color: rgb(245, 101, 101);
+        }
+
+        .box {
+            
+            
+            width: 400px;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 100px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: 11px;
+            background-color: rgb(219, 193, 155);
+        }
+
+        p {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: grab;
+        }
+        h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            height: 40px;
+        }
+        .button{
+            cursor: pointer;
+            width: 80px;
+            height: 35px;
+            border: 3px solid black;
+            margin-left: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 11px;
+        }
+        .button:hover{
+            background-color: rgb(247, 33, 33);
+        }
+    </style>
+
+    <h2 >Drag and drop Try to make a list of the 10 richest people.
+         Check by pressing the button</h2>
+
+
+    <div id="box" class="box">
+        <div class="secim" data-parent="0" id="div1">
+
+        </div>
+
+        <div class="secim" data-parent="1" id="div2">
+
+        </div>
+        <div class="secim" data-parent="2" id="div3">
+
+        </div>
+
+        <div class="secim" data-parent="3" id="div4">
+
+        </div>
+        <div class="secim" data-parent="4" id="div5">
+
+        </div>
+
+        <div class="secim" data-parent="5" id="div5">
+
+        </div>
+        <div class="secim" data-parent="6" id="div6">
+
+        </div>
+
+        <div class="secim" data-parent="7" id="div7">
+
+        </div>
+        <div class="secim" data-parent="8" id="div8">
+
+        </div>
+
+        <div class="secim" data-parent="9" id="div9">
+
+        </div>
+
+
+
+    </div>
+    <p draggable="true" name='0' data-number="1" class="drag1" data-columns="0" id="0">Jeff Bezos
+    </p>
+    <p draggable="true" name='1' class="drag1" data-columns="1" id="1">Elon Musk </p>
+
+    <p draggable="true" name='2' class="drag1" data-columns="2" id="2">Bernard Arnault
+    </p>
+    <p draggable="true" name='3' class="drag1" id="3" data-columns="3">Bill Gates
+    </p>
+    <p draggable="true" name='4' class="drag1" data-columns="4" id="4">Mark Zuckerberg
+    </p>
+    <p draggable="true" name='5' class="drag1" s data-columns="5" id="5">Warren Buffett
+
+
+
+    </p>
+    <p draggable="true" name='6' class="drag1" data-columns="6" id="6">Larry Ellison
+    </p>
+    <p draggable="true" name='7' class="drag1" data-columns="7" id="7"> Larry Page
+    </p>
+    <p draggable="true" name='8' class="drag1" data-columns="8" id="8">Sergey Brin
+    </p>
+    <p draggable="true" name='9' class="drag1" id="9" data-columns="9"> Mukesh Ambani
+    </p>
+
+    <div class="button" onclick="change()" >
+        click
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="/test.js"></script>
+
+
+
+
+</body>
+
+</html>
