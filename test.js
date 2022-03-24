@@ -1,8 +1,8 @@
 
 const drag = document.querySelectorAll('.drag1')
 
-var dragitem = null
-var secim = document.querySelectorAll('.secim')
+let dragitem = null
+let secim = document.querySelectorAll('.secim')
 let dropelementitem = null
 
 let leaveelemnt = null
@@ -12,40 +12,16 @@ let over = null
 
 let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 array.sort(() => Math.random() - 0.5);
-console.log(array)
-
-
-
-
-
-
 
 
 for (let i = 0; i < secim.length; i++) {
   secim[i].appendChild(drag[array[i]]);
 }
 
-
-
-
-
-
-
-
-
-
 drag.forEach(item => {
   item.addEventListener('dragstart', dragstart)
   item.addEventListener('dragend', dragend)
 })
-
-
-
-
-
-
-
-
 
 
 function dragstart() {
@@ -93,13 +69,6 @@ function drop() {
 
   over.classList.remove('over')
 
-
-
-
-
-
-
-
 }
 function change() {
 
@@ -143,13 +112,6 @@ function sam() {
     console.log(ab.style.order)
   })
 }
-
-
-
-
-
-
-
 
 
 
